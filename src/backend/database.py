@@ -165,7 +165,7 @@ initial_activities = {
         "participants": ["william@mergington.edu", "jacob@mergington.edu"]
     },
     "Manga Maniacs": {
-        "description": "🌸✨ Explore the fantastic stories of the most interesting characters from Japanese Manga (graphic novels). 📚🎌 Dive into thrilling adventures, epic battles, and heartwarming tales from the world of anime and manga! 🎨⚔️",
+        "description": "⚔️ 英雄 (Heroes) rise, 悪魔 (Demons) fall — and epic tales unfold! 🌸 Dive into the breathtaking world of Japanese Manga where 友情 (Friendship) and 勇気 (Courage) leap off every page. 📖✨ Discover iconic characters, legendary story arcs, and the stunning artistry of 漫画 (Manga). Whether you love action-packed 少年 (Shōnen) battles, emotional 少女 (Shōjo) romances, or mind-bending 異世界 (Isekai) adventures — there's a manga for every soul! 🎌🎨 Join us and ignite your passion for the art of Japanese graphic storytelling! 🔥💫",
         "schedule": "Tuesdays, 7:00 PM - 8:00 PM",
         "schedule_details": {
             "days": ["Tuesday"],
