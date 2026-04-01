@@ -539,7 +539,8 @@ footer {
 
 .category-filters,
 .day-filters,
-.time-filters {
+.time-filters,
+.group-by-filters {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
@@ -547,7 +548,8 @@ footer {
 
 .category-filter,
 .day-filter,
-.time-filter {
+.time-filter,
+.group-by-filter {
   background-color: var(--background);
   border: 1px solid var(--border);
   color: var(--text-primary);
@@ -560,7 +562,8 @@ footer {
 
 .category-filter.active,
 .day-filter.active,
-.time-filter.active {
+.time-filter.active,
+.group-by-filter.active {
   background-color: var(--primary);
   color: white;
   border-color: var(--primary-dark);
@@ -568,7 +571,8 @@ footer {
 
 .category-filter:hover,
 .day-filter:hover,
-.time-filter:hover {
+.time-filter:hover,
+.group-by-filter:hover {
   background-color: var(--primary-light);
   color: white;
 }
@@ -683,4 +687,46 @@ footer {
 .manga-icon img:hover {
   transform: scale(1.08) rotate(3deg);
   box-shadow: 0 6px 20px rgba(168, 85, 247, 0.6), 0 0 0 4px #f472b6;
+}
+
+/* Group By layout */
+#activities-list:has(.activity-group) {
+  display: block;
+}
+
+.activity-group {
+  margin-bottom: 20px;
+}
+
+.activity-group-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 14px;
+  border-radius: 6px 6px 0 0;
+  background-color: var(--border-light);
+  border: 1px solid var(--border);
+  border-bottom: none;
+}
+
+.activity-group-title {
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.activity-group-count {
+  font-size: 0.75rem;
+  opacity: 0.75;
+}
+
+.activity-group-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 15px;
+  border: 1px solid var(--border);
+  border-radius: 0 0 6px 6px;
+  background-color: var(--surface);
 }
