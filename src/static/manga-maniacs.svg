@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background circle with gradient -->
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ff9de2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c084fc;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="faceGrad" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" style="stop-color:#fde68a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:1" />
+    </radialGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#db2777;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bookGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f472b6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="url(#bgGrad)" />
+
+  <!-- Decorative sparkles -->
+  <g fill="#fff" opacity="0.8">
+    <polygon points="20,30 22,26 24,30 28,32 24,34 22,38 20,34 16,32" />
+    <polygon points="165,20 167,16 169,20 173,22 169,24 167,28 165,24 161,22" />
+    <polygon points="175,155 177,151 179,155 183,157 179,159 177,163 175,159 171,157" />
+    <polygon points="15,140 17,136 19,140 23,142 19,144 17,148 15,144 11,142" />
+  </g>
+
+  <!-- Stars / twinkling effects -->
+  <g fill="#fff5" font-size="14">
+    <text x="28" y="80">✦</text>
+    <text x="158" y="60">✦</text>
+    <text x="148" y="170">✦</text>
+    <text x="30" y="168">✦</text>
+  </g>
+
+  <!-- Manga book -->
+  <rect x="58" y="105" width="84" height="62" rx="5" ry="5" fill="url(#bookGrad)" />
+  <rect x="62" y="109" width="76" height="54" rx="3" ry="3" fill="#fff" opacity="0.95" />
+  <!-- Book spine -->
+  <rect x="58" y="105" width="10" height="62" rx="5" ry="5" fill="#9333ea" />
+  <!-- Book lines (manga panels) -->
+  <line x1="70" y1="115" x2="130" y2="115" stroke="#e9d5ff" stroke-width="1.5" />
+  <line x1="70" y1="125" x2="130" y2="125" stroke="#e9d5ff" stroke-width="1.5" />
+  <line x1="70" y1="135" x2="130" y2="135" stroke="#e9d5ff" stroke-width="1.5" />
+  <line x1="70" y1="145" x2="130" y2="145" stroke="#e9d5ff" stroke-width="1.5" />
+  <line x1="100" y1="115" x2="100" y2="155" stroke="#e9d5ff" stroke-width="1.5" />
+  <!-- Mini action marks on book -->
+  <text x="74" y="123" font-size="8" fill="#a855f7">★</text>
+  <text x="104" y="133" font-size="8" fill="#db2777">⚡</text>
+  <text x="74" y="143" font-size="7" fill="#9333ea">💥</text>
+  <text x="104" y="153" font-size="8" fill="#a855f7">★</text>
+
+  <!-- Anime character head -->
+  <!-- Hair (back) -->
+  <ellipse cx="100" cy="66" rx="36" ry="40" fill="url(#hairGrad)" />
+  <!-- Hair spikes -->
+  <polygon points="68,50 58,22 76,42" fill="#7c3aed" />
+  <polygon points="78,42 72,12 88,38" fill="#9333ea" />
+  <polygon points="100,38 100,10 108,38" fill="#7c3aed" />
+  <polygon points="120,42 128,12 112,38" fill="#9333ea" />
+  <polygon points="132,50 142,22 124,42" fill="#7c3aed" />
+
+  <!-- Face -->
+  <ellipse cx="100" cy="74" rx="28" ry="30" fill="url(#faceGrad)" />
+
+  <!-- Large anime eyes -->
+  <!-- Left eye -->
+  <ellipse cx="88" cy="72" rx="9" ry="10" fill="#fff" />
+  <ellipse cx="88" cy="73" rx="6" ry="7" fill="#60a5fa" />
+  <ellipse cx="88" cy="73" rx="4" ry="5" fill="#1d4ed8" />
+  <circle cx="88" cy="72" r="2.5" fill="#000" />
+  <circle cx="90" cy="70" r="1.5" fill="#fff" />
+  <!-- Left eye shine -->
+  <circle cx="85" cy="76" r="1" fill="#fff" opacity="0.8" />
+
+  <!-- Right eye -->
+  <ellipse cx="112" cy="72" rx="9" ry="10" fill="#fff" />
+  <ellipse cx="112" cy="73" rx="6" ry="7" fill="#60a5fa" />
+  <ellipse cx="112" cy="73" rx="4" ry="5" fill="#1d4ed8" />
+  <circle cx="112" cy="72" r="2.5" fill="#000" />
+  <circle cx="114" cy="70" r="1.5" fill="#fff" />
+  <!-- Right eye shine -->
+  <circle cx="109" cy="76" r="1" fill="#fff" opacity="0.8" />
+
+  <!-- Eyebrows -->
+  <path d="M80,62 Q88,58 96,62" stroke="#7c3aed" stroke-width="2.5" fill="none" stroke-linecap="round" />
+  <path d="M104,62 Q112,58 120,62" stroke="#7c3aed" stroke-width="2.5" fill="none" stroke-linecap="round" />
+
+  <!-- Blush marks -->
+  <ellipse cx="80" cy="82" rx="7" ry="4" fill="#fb7185" opacity="0.5" />
+  <ellipse cx="120" cy="82" rx="7" ry="4" fill="#fb7185" opacity="0.5" />
+
+  <!-- Small nose -->
+  <circle cx="100" cy="83" r="1.5" fill="#fbbf24" opacity="0.7" />
+
+  <!-- Happy smile -->
+  <path d="M91,91 Q100,98 109,91" stroke="#d97706" stroke-width="2" fill="none" stroke-linecap="round" />
+
+  <!-- Japanese text label -->
+  <text x="100" y="193" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#fff" opacity="0.95">マンガ 📚</text>
+</svg>

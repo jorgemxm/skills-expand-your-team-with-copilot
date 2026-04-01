@@ -664,3 +664,23 @@ footer {
 #logout-button:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
+
+/* Manga Maniacs SVG icon styles */
+.activity-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.manga-icon img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(168, 85, 247, 0.4), 0 0 0 3px #f9a8d4;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.manga-icon img:hover {
+  transform: scale(1.08) rotate(3deg);
+  box-shadow: 0 6px 20px rgba(168, 85, 247, 0.6), 0 0 0 4px #f472b6;
+}
