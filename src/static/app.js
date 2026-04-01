@@ -324,8 +324,11 @@ document.addEventListener("DOMContentLoaded", () => {
       name.includes("music") ||
       name.includes("theater") ||
       name.includes("drama") ||
+      name.includes("manga") ||
+      name.includes("anime") ||
       desc.includes("creative") ||
-      desc.includes("paint")
+      desc.includes("paint") ||
+      desc.includes("graphic novel")
     ) {
       return "arts";
     } else if (
@@ -506,6 +509,13 @@ document.addEventListener("DOMContentLoaded", () => {
       </span>
     `;
 
+    // Create activity icon if the activity has a custom icon
+    const activityIconHtml = details.icon ? `
+      <div class="activity-icon manga-icon">
+        <img src="${details.icon}" alt="${name}" title="${name} 🎌" />
+      </div>
+    ` : "";
+
     // Create capacity indicator
     const capacityIndicator = `
       <div class="capacity-container ${capacityStatusClass}">
@@ -520,6 +530,7 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
 
     activityCard.innerHTML = `
+      ${activityIconHtml}
       ${tagHtml}
       <h4>${name}</h4>
       <p>${details.description}</p>
